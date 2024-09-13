@@ -1,0 +1,145 @@
+.cart {
+    padding: 30px;
+}
+
+.cartTitle {
+    width: max-content;
+    font-weight: 600;
+    font-size: 32px;
+    border-bottom: 3px solid teal;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cartItems {
+    width: 70%;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.itemImage {
+    width: 140px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.itemInfo {
+    width: calc(100% - 140px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.itembookTitle,
+.itemAuthor { 
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.itemQuantity {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.itemQuantity button {
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px;
+    background-color: #222821;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.itemQuantity b {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.itemPrice {
+    font-size: 24px;
+    text-align: center;
+}
+
+.itemDelete {
+    position: absolute;
+    bottom: 5px;
+    font-size: 24px;
+    color: crimson;
+    cursor: pointer;
+}
+
+.orderSummary {
+    width: 30%;
+    border: 1px solid gray;
+    margin: 0 10px;
+}
+
+.orderTitle {
+    padding: 15px 10px;
+    font-size: 24px;
+}
+
+.orderItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    font-size: 21px;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .cartItems {
+        width: 100%;
+    }
+
+    .orderSummary {
+        width: 320px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+    .itemQuantity {
+        width: 100px;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 520px) {
+    .cart {
+        padding: 15px;
+    }
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+    .cartItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .itemInfo {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
