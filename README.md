@@ -62,6 +62,7 @@ Ensure you have the following installed:
 5. **Open Your Browser:**
 
     Visit [http://localhost:3000](http://localhost:3000) to see your Next.js application running locally.
+   
     Alternatively, you can access the live version of the website here: [Live Bookstore](https://elgendy-book-store.netlify.app/).
 
 
